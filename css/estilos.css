@@ -11,22 +11,30 @@ body{
 .contenido{
   max-width: 900px;
   margin:0 auto;
-  border-radius: 10px 10px 10px 10px;
 }
 
 .cabecera{
   height: 100px;
   background-color: #5b7989;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .cabecera h2{
   float: left;
-  padding-top: 1%;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .cabecera nav{
-  padding-top: 4%;
+  padding-top: 40px;
   float: right;
+  padding-right: 10px;
+}
+
+.cabecera nav a{
+  color: white;
 }
 
 a[href='index.html']{
@@ -36,42 +44,117 @@ a[href='index.html']{
 .imagen_central{
   background-color: #82c3a6;
   width: 100%;
-  text-align: center;
 }
 
 .imagen_secundaria{
   display: flex;
   flex-flow: row wrap;
   background-color: #d5c75f;
+  width: 100%;
 }
 
 #imagen1{
-  padding-top: 1%;
-  width: 90%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 90%;
+ padding-top: 12px;
+ padding-bottom: 12px;
 }
 
 .bloque1 {
   order: 1;
   text-align: center;
+  text-decoration: underline;
 }
 
 .bloque2 {
   order: 2;
   text-align: center;
+  text-decoration: underline;
 }
 
 div [class*="bloque"]{
   flex: 50%;
 }
 
+#imagen2{
+margin-top: 10px;
+margin-bottom: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#imagen3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #imagen2:hover{
   transform: rotate(10deg);
   border: 2px solid;
-  box-shadow: 2px 2px 10px #82c3a6;
+  box-shadow: 1px 1px 1px 1px #82c3a6;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
 #imagen3:hover{
   transform: translate(20px, -5px);
   border: 2px solid;
-  box-shadow: 2px 2px 10px #82c3a6;
+  box-shadow: 1px 1px 1px 1px #82c3a6;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+footer{
+  background-color:#C6d5c5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.contacto{
+  width: 25%;
+}
+
+.contacto h2,.contacto p{
+  margin-left: 50px;
+}
+
+.contacto a{
+  color: black;
+}
+
+.terminos{
+  width: 25%;
+}
+
+.terminos h2,.terminos p,.terminos a{
+  margin-left: 50px;
+}
+
+.redes_sociales{
+  width: 25%;
+}
+
+.redes_sociales h2,.redes_sociales p,.redes_sociales a{
+  margin-left: 50px;
+}
+
+.redes_sociales img{
+  width: 20px;
+}
+
+.derechos{
+  width: 25%;
+}
+
+.derechos h2,.derechos p,.derechos a{
+  margin-left: 50px;
 }
